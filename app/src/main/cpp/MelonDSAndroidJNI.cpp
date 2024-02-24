@@ -16,6 +16,8 @@
 #include "MelonDSAndroidCameraHandler.h"
 #include "RAAchievementMapper.h"
 
+#include <android/log.h>
+
 #define MAX_CHEAT_SIZE (2*64)
 
 void* emulate(void*);
@@ -480,6 +482,8 @@ void* emulate(void*)
     double lastMeasureFpsTick = startTick;
     double frameLimitError = 0.0;
 
+    __android_log_print(ANDROID_LOG_DEBUG,
+                        "--koi--",  "MelonDSAndroidJNI 486");
     MelonDSAndroid::start();
 
     for (;;)

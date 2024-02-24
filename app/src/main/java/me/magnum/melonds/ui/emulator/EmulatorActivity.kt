@@ -6,6 +6,7 @@ import android.content.res.Configuration
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.KeyEvent
 import android.view.View
 import android.view.Window
@@ -561,6 +562,8 @@ class EmulatorActivity : AppCompatActivity() {
     private fun launchEmulator() {
         val extras = intent?.extras
         val bootFirmwareOnly = extras?.getBoolean(KEY_BOOT_FIRMWARE_ONLY) ?: false
+
+        Log.i("koi Log.i", "launchEmulator 566")
 
         disableScreenTimeOut()
         if (bootFirmwareOnly) {
