@@ -114,7 +114,9 @@
             <LinearLayout
                     android:id="@+id/layoutPrefLoadGbaRom"
                     style="@style/Layout.RomSetting"
-                    android:minHeight="48dp">
+                    android:minHeight="48dp"
+                    android:visible="false"
+                >
 
                 <RelativeLayout
                         style="@style/Layout.RomSettingContent">
@@ -148,7 +150,9 @@
                     style="@style/Layout.RomSetting" >
 
                 <LinearLayout
-                        style="@style/Layout.RomSettingContent">
+                        style="@style/Layout.RomSettingContent"
+                        android:visible="false"
+                    >
 
                     <TextView
                             android:id="@+id/label_preference_gba_cart_path"
@@ -170,6 +174,7 @@
 
             <LinearLayout
                     android:id="@+id/layoutPrefGbaSavePath"
+                    android:visible="false"
                     style="@style/Layout.RomSetting" >
 
                 <LinearLayout

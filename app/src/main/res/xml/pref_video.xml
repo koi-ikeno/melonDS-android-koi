@@ -53,7 +53,9 @@
             app:iconSpaceReserved="false"
             android:entries="@array/dsi_camera_source_options"
             android:entryValues="@array/dsi_camera_source_values"
-            android:defaultValue="physical_cameras" />
+            android:defaultValue="physical_cameras"
+            app:isPreferenceVisible="false"
+        />
 
     <me.magnum.melonds.ui.settings.preferences.StoragePickerPreference
             android:key="dsi_camera_static_image"
@@ -63,5 +65,8 @@
             app:type="file"
             app:permissions="read"
             app:persistPermissions="true"
-            app:mimeType="image/jpeg|image/png" />
+            app:mimeType="image/jpeg|image/png"
+            app:isPreferenceVisible="false"
+        />
+
 </PreferenceScreen>

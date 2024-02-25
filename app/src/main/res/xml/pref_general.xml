@@ -34,7 +34,9 @@
             app:ms_switchOnBackgroundColor="@color/prefSwitchBackground"
             app:ms_switchOffBackgroundColor="@color/prefSwitchBackground"
             app:ms_switchOffExplanationText="@string/rewind_description"
-            app:ms_includedPrefScreen="xml/pref_rewind" />
+            app:ms_includedPrefScreen="xml/pref_rewind"
+            app:isPreferenceVisible="false"
+        />
 
     <SwitchPreference
             android:key="enable_sustained_performance"

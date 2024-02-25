@@ -13,6 +13,7 @@
     <Preference
             android:title="@string/custom_bios_firmware"
             app:iconSpaceReserved="false"
+            app:isPreferenceVisible="false"
             android:fragment="me.magnum.melonds.ui.settings.fragments.CustomFirmwarePreferencesFragment" />
 
     <SwitchPreference

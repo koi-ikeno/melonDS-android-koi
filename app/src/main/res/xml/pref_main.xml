@@ -42,16 +42,19 @@
             android:summary="@string/input_summary"
             app:icon="@drawable/ic_input"
             android:fragment="me.magnum.melonds.ui.settings.fragments.InputPreferencesFragment" />
-
+<!--
     <Preference
             android:title="@string/retroachievements"
             android:summary="@string/retroachievements_summary"
             app:icon="@drawable/ic_trophy"
+            android:visible="false"
             android:fragment="me.magnum.melonds.ui.settings.fragments.RetroAchievementsPreferencesFragment" />
 
     <Preference
             android:title="@string/cheats"
             android:summary="@string/cheats_summary"
+            android:visible="false"
             app:icon="@drawable/ic_cheat"
             android:fragment="me.magnum.melonds.ui.settings.fragments.CheatsPreferencesFragment" />
+    -->
 </PreferenceScreen>

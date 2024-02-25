@@ -318,6 +318,7 @@ class EmulatorViewModel @Inject constructor(
                             _uiEvent.emit(EmulatorUiEvent.ShowRewindWindow(rewindWindow))
                         }
                     }
+
                     RomPauseMenuOption.CHEATS -> {
                         (_emulatorState.value as? EmulatorState.RunningRom)?.let {
                             getRomInfo(it.rom)?.let { romInfo ->
@@ -731,7 +732,7 @@ class EmulatorViewModel @Inject constructor(
         return when (option) {
             RomPauseMenuOption.REWIND -> settingsRepository.isRewindEnabled() && emulatorSession.areSaveStateLoadsAllowed()
             RomPauseMenuOption.LOAD_STATE -> emulatorSession.areSaveStateLoadsAllowed()
-            RomPauseMenuOption.CHEATS -> emulatorSession.areCheatsEnabled()
+            RomPauseMenuOption.CHEATS -> false//emulatorSession.areCheatsEnabled()
             RomPauseMenuOption.VIEW_ACHIEVEMENTS -> emulatorSession.areRetroAchievementsEnabled()
             else -> true
         }

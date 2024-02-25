@@ -106,6 +106,7 @@ fun RomHeaderUi(
                             )
                         }
                     )
+                    /*
                     Tab(
                         selected = pagerState.currentPage == RomDetailsTab.RETRO_ACHIEVEMENTS.tabIndex,
                         onClick = { onTabClicked(RomDetailsTab.RETRO_ACHIEVEMENTS) },
@@ -116,6 +117,7 @@ fun RomHeaderUi(
                             )
                         }
                     )
+                    */
                 }
             }
         }
